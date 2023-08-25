@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
