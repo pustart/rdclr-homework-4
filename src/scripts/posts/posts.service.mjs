@@ -6,7 +6,13 @@ class PostsService {
   }
 
   async findPaginatedPosts(page, limit) {
-    return await this._fetchService.fetchData(`https://dummyjson.com/posts?limit=${limit}&page=${page}`);
+    let skip = 0;
+
+    if (page !== 1) {
+      skip = page * limit;
+    }
+
+    return await this._fetchService.fetchData(`https://dummyjson.com/posts?limit=${limit}&skip=${skip}`);
   }
 }
 
