@@ -12,12 +12,9 @@ html {
 }
 
 :root {
-  --header-dark: #2E323F;
-  --dark: #3B4050;
-  --light: #F1F1F1;
-  --gold: #A59678;
-  --weak: #FFF;
-  --desktop-breakpoint: 1024px;
+  --base-strong: #66aee0;
+  --base-weak: #f9f9f9;
+  --success: #77d175;
   --desktop-max: 1600px;
 }
 
@@ -57,7 +54,13 @@ ul {
 body {
   margin: 0;
   padding: 0;
-  background: var(--weak);
+  background: var(--base-strong);
+  font-family: Inter;
+  font-style: normal;
+
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
 a {
@@ -74,4 +77,5 @@ button {
   border: none;
   font-size: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
