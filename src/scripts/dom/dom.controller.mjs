@@ -23,6 +23,10 @@ class DomController {
     this._currentPage++;
   }
 
+  getLoadBtn() {
+    return document.querySelector('.more-btn');
+  }
+
   _renderPostsList(posts) {
     const container = document.querySelector('.card-list');
 
