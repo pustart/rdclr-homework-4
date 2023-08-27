@@ -17,3 +17,4 @@ const observer = new IntersectionObserver(handleIntersection, {
   threshold: 1
 });
 
+observer.observe(domController.getLoadBtn());
